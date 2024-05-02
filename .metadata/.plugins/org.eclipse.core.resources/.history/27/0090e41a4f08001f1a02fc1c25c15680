@@ -1,0 +1,9 @@
+package com.spring1.test;
+
+public class DtoTest1 {
+	public static void main(String[] args) {
+		Sample2 sample2 = new Sample2();
+		
+		
+	} 
+}
