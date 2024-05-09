@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 수정자에 의한 주입, 필드 주입 -->
+	<bean id="obj1" class="com.spring3.test.InjectionAnnotation1" autowire="byName"></bean>
+	<bean id="storeBean1" class="com.spring3.dto.Store"/>
+	<bean id="storeBean2" class="com.spring3.dto.Store"/>
+	
+	<bean id="obj2" class="com.spring3.test.InjectionAnnotation2" autowire="byType"></bean>
+	<bean id="shopBean1" class="com.spring3.dto.Shop"/>
+	<bean id="shopBean2" class="com.spring3.dto.Shop"/>
+
+<!-- 생성자 주입 -->
+	<bean id="marketBean1" class="con.spring3.dto.Market"></bean>
+	<bean id="obj3" class="com.spring3.test.InjectionAnnotation3" autowire="constructor"></bean>
+	
+	<bean id="obj4" class="com.spring3.test.InjectionAnnotation4" autowire="constructor">
+		<constructor-arg value="1000" index="0" type="int"></constructor-arg>
+		<constructor-arg value="문자열데이터" index="1" ></constructor-arg>
+		
+	</bean>
+	
+	
+	<bean id="martBean1" class="com.spring3.dto.Mart"></bean>
+	
+	<context:annotation-config/>
+</beans>

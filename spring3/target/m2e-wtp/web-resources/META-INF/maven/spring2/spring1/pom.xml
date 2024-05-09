@@ -283,6 +283,12 @@
 		    <artifactId>jaxb-api</artifactId>
 		    <version>2.3.0</version>
 		</dependency>
+		<!-- annotation api -->
+		<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.2</version>
+</dependency>
   </dependencies>
   <build>
     <plugins>
