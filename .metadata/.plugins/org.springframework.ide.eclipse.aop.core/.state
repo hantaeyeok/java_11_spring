@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="spring1"/>
 <aop-project name="spring2"/>
 <aop-project name="spring3"/>
-<aop-project name="spring1"/>
 <aop-project name="study4"/>
 <aop-project name="study5"/>
 <aop-project name="study6"/>
 <aop-project name="study7"/>
 <aop-project name="study8"/>
+<aop-project name="study9"/>
 </aop-reference-model>
